@@ -26,22 +26,6 @@ public class MultiTouch extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        mView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-
-                return true;
-            }
-
-            private void actionMove(MotionEvent event) {
-
-            }
-
-            private void actionDown(MotionEvent event) {
-            }
-        });
-
 
     }
 
