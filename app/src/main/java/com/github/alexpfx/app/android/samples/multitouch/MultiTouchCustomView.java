@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.support.annotation.Nullable;
+import android.support.v4.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -57,12 +58,10 @@ public class MultiTouchCustomView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        int actionMasked = event.getActionMasked();
         int actionIndex = event.getActionIndex();
         int pointerId = event.getPointerId(actionIndex);
 
-        out("%d %d %d", actionIndex, pointerId, actionMasked);
-        switch (actionMasked) {
+        switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_POINTER_DOWN:
                 moveTo(event, pointerId);
