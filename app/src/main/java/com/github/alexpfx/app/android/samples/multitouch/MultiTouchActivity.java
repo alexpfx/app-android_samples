@@ -12,8 +12,8 @@ import com.github.alexpfx.app.android.samples.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MultiTouch extends AppCompatActivity {
-    private static final String TAG = "MultiTouch";
+public class MultiTouchActivity extends AppCompatActivity {
+    private static final String TAG = "MultiTouchActivity";
     @BindView(R.id.clickable_view)
     View mView;
 

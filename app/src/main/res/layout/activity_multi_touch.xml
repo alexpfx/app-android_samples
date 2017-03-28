@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.alexpfx.app.android.samples.multitouch.MultiTouch">
+    tools:context="com.github.alexpfx.app.android.samples.multitouch.MultiTouchActivity">
   <com.github.alexpfx.app.android.samples.multitouch.MultiTouchCustomView
       android:id="@+id/clickable_view"
       android:layout_width="match_parent"

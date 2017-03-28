@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.alexpfx.app.android.samples">
+          package="com.github.alexpfx.app.android.samples">
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".multitouch.MultiTouch">
+        <activity android:name=".multitouch.MultiTouchActivity">
+        </activity>
+        <activity android:name=".material.MaterialDetailActivity">
+        </activity>
+        <activity android:name=".material.MaterialMainActivity">
         </activity>
     </application>
 

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                      xmlns:tools="http://schemas.android.com/tools"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:background="@color/white"
+                                      app:columnCount="2"
+    >
+
+    <android.support.v4.widget.Space
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        />
+
+    <TextView
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="@string/material_tomorrow"
+        android:text="Tomorrow, May 09"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/today_icon"
+        android:maxWidth="@dimen/today_icon"
+        android:src="@drawable/art_clear"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+
+        />
+
+    <TextView
+        android:width="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="@string/material_max_temperature"
+        android:text="@string/material_max_temperature"
+        />
+
+    <TextView
+        android:width="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="@string/material_clear"
+        android:text="@string/material_clear"
+        />
+
+    <TextView
+        android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:width="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill_horizontal"
+        tools:text="@string/material_min_temperature"
+        android:text="@string/material_min_temperature"
+
+        />
+
+    <android.support.v4.widget.Space
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+</android.support.v7.widget.GridLayout>

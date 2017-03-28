@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/googleg_standard_color_128dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <include
+        layout="@layout/today_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingEnd="@dimen/forecast_detail_horizontal_padding"
+        android:paddingLeft="@dimen/forecast_detail_horizontal_padding"
+        android:paddingRight="@dimen/forecast_detail_horizontal_padding"
+        android:paddingStart="@dimen/forecast_detail_horizontal_padding"
+        android:paddingTop="@dimen/abc_list_item_padding_horizontal_material"
+        app:columnCount="2">
+
+        >
+
+
+        <TextView
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|left"
+            android:text="@string/material_humidity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|right"
+            android:text="@string/material_humidity_value"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            tools:text="@string/material_humidity_value"
+            />
+
+
+        <TextView
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|left"
+            android:text="@string/material_pressure"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            tools:text="@string/material_pressure"
+            />
+
+        <TextView
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|right"
+            android:text="@string/material_pressure_value"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            tools:text="@string/material_pressure_value"
+
+            />
+
+        <TextView
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|left"
+            android:text="@string/material_wind"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            tools:text="@string/material_wind"
+            />
+
+        <TextView
+            android:width="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|right"
+            android:text="@string/material_wind_value"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_rowWeight="1"
+            tools:text="@string/material_wind_value"
+            />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+</LinearLayout>

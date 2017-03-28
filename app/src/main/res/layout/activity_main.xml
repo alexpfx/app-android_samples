@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context="com.github.alexpfx.app.android.samples.MainActivity">
-
-    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
-        <android.support.v7.widget.GridLayout android:layout_width="match_parent"
-            android:layout_height="match_parent" app:columnCount="4">
-            <Button android:id="@+id/btn_multitouch" android:text="@string/action_multitoch"/>
-
-        </android.support.v7.widget.GridLayout>
-    </ScrollView>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.alexpfx.app.android.samples.MainActivity"
+    >
 
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/googleg_standard_color_128dp"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2">
+
+        <Button
+            android:id="@+id/btn_multitouch"
+            android:layout_width="0dp"
+            android:text="@string/action_multitoch"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btn_material"
+            android:layout_width="0dp"
+            android:text="@string/action_material"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btn_material_main"
+            android:layout_width="0dp"
+            android:text="@string/action_material_main"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+</LinearLayout>

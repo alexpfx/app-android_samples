@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">app-android_samples</string>
     <string name="action_multitoch">Multi Touch</string>
+    <string name="action_material">Material Detail</string>
+    <string name="material_max_temperature">19 º</string>
+    <string name="material_clear">Clear</string>
+    <string name="material_min_temperature">6 º</string>
+    <string name="material_tomorrow">Tomorrow, May 09</string>
+    <string name="material_humidity">Humidity</string>
+    <string name="material_humidity_value">66%</string>
+    <string name="material_pressure">Pressure</string>
+    <string name="material_pressure_value">992 hPa</string>
+    <string name="material_wind">Wind</string>
+    <string name="material_wind_value">1 km/h SW</string>
+    <string name="action_material_main">Material Main</string>
+
 </resources>
