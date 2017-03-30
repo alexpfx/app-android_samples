@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
+import com.github.alexpfx.app.android.samples.geofances.GeofencesActivity;
 import com.github.alexpfx.app.android.samples.material.MaterialDetailActivity;
 import com.github.alexpfx.app.android.samples.material.MaterialMainActivity;
 import com.github.alexpfx.app.android.samples.multitouch.MultiTouchActivity;
@@ -49,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btn_material_main)
     void materialMain (View view){
         startActivity(MaterialMainActivity.class);
+    }
+
+    @OnClick(R.id.btn_geofences)
+    void geofences (View view){
+        startActivity(GeofencesActivity.class);
     }
 
     private void startActivity(Class clazz) {

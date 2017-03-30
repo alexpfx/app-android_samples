@@ -57,6 +57,17 @@
             app:layout_gravity="fill_horizontal"
             />
 
+        <Button
+            android:id="@+id/btn_geofences"
+            android:layout_width="0dp"
+            android:text="@string/action_geofences"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            />
+
+
+
+
 
     </android.support.v7.widget.GridLayout>
 

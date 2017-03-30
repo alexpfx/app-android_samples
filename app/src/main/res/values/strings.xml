@@ -13,5 +13,7 @@
     <string name="material_wind">Wind</string>
     <string name="material_wind_value">1 km/h SW</string>
     <string name="action_material_main">Material Main</string>
+    <string name="title_activity_geofences">Map</string>
+    <string name="action_geofences">Geofences</string>
 
 </resources>
