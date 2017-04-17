@@ -1,4 +1,6 @@
-package com.github.alexpfx.app.android.samples.mvp;
+package com.github.alexpfx.app.android.samples.motos.mvp;
+
+import android.os.Bundle;
 
 /**
  * Created by alexandre on 01/04/2017.
@@ -6,6 +8,9 @@ package com.github.alexpfx.app.android.samples.mvp;
 
 public interface MVP {
     interface Model {
+        void retrieveMotos();
+        void isFavorite (Moto moto);
+
 
     }
 }

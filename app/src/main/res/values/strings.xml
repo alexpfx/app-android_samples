@@ -15,5 +15,7 @@
     <string name="action_material_main">Material Main</string>
     <string name="title_activity_geofences">Map</string>
     <string name="action_geofences">Geofences</string>
+    <string name="title_activity_rx_java">RxJava</string>
+    <string name="action_rxjava">RxJava</string>
 
 </resources>

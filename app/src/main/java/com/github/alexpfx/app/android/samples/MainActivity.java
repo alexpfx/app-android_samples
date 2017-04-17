@@ -11,6 +11,7 @@ import com.github.alexpfx.app.android.samples.geofances.GeofencesActivity;
 import com.github.alexpfx.app.android.samples.material.MaterialDetailActivity;
 import com.github.alexpfx.app.android.samples.material.MaterialMainActivity;
 import com.github.alexpfx.app.android.samples.multitouch.MultiTouchActivity;
+import com.github.alexpfx.app.android.samples.rxjava.RxJava;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(GeofencesActivity.class);
     }
 
+    @OnClick(R.id.btn_rxjava)
+    void rxjava (){
+        startActivity(RxJava.class);
+    }
     private void startActivity(Class clazz) {
         Intent intent = new Intent(getApplicationContext(), clazz);
         startActivity(intent);

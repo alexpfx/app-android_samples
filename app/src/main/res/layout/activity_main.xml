@@ -65,6 +65,14 @@
             app:layout_gravity="fill_horizontal"
             />
 
+        <Button
+            android:id="@+id/btn_rxjava"
+            android:layout_width="0dp"
+            android:text="@string/action_rxjava"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+        />
+
 
 
 
