@@ -9,10 +9,7 @@ import retrofit2.http.Query;
  * Created by alexandre on 17/05/2017.
  */
 
-public interface Endpoints {
-
-    @POST("tournaments")
-    Call<Tournment> createTournment (@Query("api_key") String apiKey, @Body Tournment tournment);
-
-
+public interface ChallongeEndpoints {
+    @POST("tournaments.json")
+    Call<String> createTournment (@Query("api_key") String apiKey, @Body ChallongeTournament tournament);
 }
